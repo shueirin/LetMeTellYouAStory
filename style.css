@@ -1,0 +1,166 @@
+body, h1, h3, p {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 0%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px 40px 20px 20px;
+  }
+  header {
+      text-align: center;
+      margin: 20px;
+      border: 3px solid #444;
+      padding: 20px;
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* Pagination */
+  .w3-bar > .selected {
+      background-color: black;
+      color: white;
+  }
+
+  /* HOME Story list */
+#story-home .w3-card {
+    height: 100px;
+    overflow: hidden;
+    margin: 15px 30px;
+    position: relative;
+}
+#story-home .w3-card img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+} 
+#story-home .w3-card h3 {
+    margin: 10px 0 10px;
+    font-size: 1.2em;
+}
+
+#story-home .w3-card p {
+    font-size: 0.8em;
+}
+
+/*HOME storyteller info */
+.storyteller-info img {
+    margin-bottom: 20px;
+}
+
+/* ABOUT USER IMAGE*/
+#story-about figure img {
+    margin-bottom: 20px;
+}
+#story-about figure figcaption {
+    text-align: center;
+}
+
+/* CONTACT */
+#story-contact section {
+    min-height: 300px;
+}
+#story-contact h2 {
+    text-align: center;
+}
+
+#story-contact form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 661px) {
+    #story-contact form {
+        width: 100%;
+    }
+}
+
+
+#story-contact textarea {
+    height: 193px;
+    border: 1px solid #f4f3;
+}
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}

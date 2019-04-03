@@ -1,0 +1,31 @@
+﻿What i want to build:
+- An online comic / sequential story
+  -- slide show with text 
+  -- story teller can input image + story naration for the particular image
+  -- if published, that story become a sequential.
+  -- the sequential use slideshow and navigation
+  -- Should be One page app
+
+
+PAGE  STRUCTURE
+- Title Bar + Navigation
+-  Nav items: 
+   -- HOME   (index.html)
+	> list of stories 
+	   -- Thumbnail cover image
+      	   -- Title -> goes to story 1
+	   -- Synopsys. 
+
+   -- STORIES  (story-index.html)
+      -- Story 1   (story-1.html)
+	> Title
+	> Image 1, Image 2, Image 3
+	> Naration 1, Naration 2, Naration 3
+	
+      -- Story 2  (story-2.html)
+      -- Story 3  (story-3.html)
+      -- Story...
+   -- ABOUT (about.html)
+   -- CONTACT (contact.html)
+
+PAGE NAME = StoryTeller
