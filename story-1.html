@@ -32,6 +32,97 @@
     </header>
     <section id="main" class="w3-row">
         
+
+        <!-- Images used to open the lightbox -->
+        <div class="row" id="storyPanel">
+            <div class="column">
+            <img src="./images/img1-800x600.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/img2-800x600.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/img3-800x600.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/img4-800x600.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/img5-800x600.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+            <img src="./images/img6-800x600.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+        
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="./images/img1-800x600.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="./images/img2-800x600.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="./images/img3-800x600.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="./images/img4-800x600.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="./images/img5-800x600.png" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="./images/img6-800x600.png" style="width:100%">
+                </div>
+
+            
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+        
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="./images/img1-800x600.png" onclick="currentSlide(1)" alt="Some guy just strolling on a fine day">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./images/img2-800x600.png" onclick="currentSlide(2)" alt="A bird came from the sky to him while loudly chirping">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./images/img3-800x600.png" onclick="currentSlide(3)" alt="And before he can react, the burt suddenly explode!">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./images/img4-800x600.png" onclick="currentSlide(4)" alt="From the smokes appeared a beautiful girl with bright smile..">
+                </div>
+                <div class="column">
+                    <img class="demo" src="./images/img5-800x600.png" onclick="currentSlide(5)" alt="But the guy feel sick and vomitted. The girl shocked because it's not the reaction she expected.">
+                </div>
+            
+                <div class="column">
+                    <img class="demo" src="./images/img6-800x600.png" onclick="currentSlide(6)" alt="The guy chose to leave the scene, the girl protested while following the guy/ ">
+                </div>
+            </div>
+        </div>
+
     </section>
     <footer>
          <p>&copy;2019 - Let me tell you a story</p>
